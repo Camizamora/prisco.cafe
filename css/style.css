@@ -1,0 +1,325 @@
+@import url(//db.onlinewebfonts.com/c/effe415ccccc9b5e5cc36bed338d8cea?family=BurfordW03-Base);
+
+@import url(//db.onlinewebfonts.com/c/710f298ac37279ec3ab18f0e5cd94f55?family=Novecento+DemiBold);
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #f0e8e1;
+}
+
+body {
+  font-family: "Novecento DemiBold";
+}
+
+/********* HEADER *********/
+
+.cajaPrincipal {
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  background-color: #175a66;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  grid-area: header;
+}
+
+.cajaPrincipal ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  color: #f0e8e1;
+  list-style: none;
+  margin-right: 2rem;
+  margin-top: 4rem;
+}
+
+.logo {
+  margin-left: 2rem;
+}
+
+.cajaPrincipal li {
+  margin-right: 2rem;
+}
+
+.cajaPrincipal a:hover {
+  color: #69b8b9;
+}
+
+/******** MAIN INDEX *********/
+
+.fondo {
+  padding: 10rem 50rem 20rem 50rem;
+  background-image: url("../img/prisco.jpeg");
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+  opacity: 80%;
+  grid-area: fondo;
+}
+
+.fondo #priscoCafePane {
+  font-family: "BurfordW03-Base";
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10rem;
+}
+
+/********* FOOTER ************/
+
+.footerContent {
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  background-color: #f0e8e1;
+  justify-content: space-between;
+  grid-area: footer;
+}
+
+.footerContent p {
+  font-size: 1rem;
+}
+
+.footerContent h2 {
+  font-size: 1.5rem;
+}
+
+.footerContent div {
+  margin-top: 2rem;
+}
+
+.direccion {
+  margin-left: 3rem;
+  grid-area: direccion;
+}
+
+.horarios {
+  grid-area: horarios;
+}
+
+.instagram {
+  opacity: 80%;
+  margin-right: 10rem;
+  grid-area: instagram;
+}
+
+/********* MENU **********/
+
+.fondoMenu {
+  /* padding: 10rem 50rem 20rem 50rem; */
+  background-image: url(../img/mesa3.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  opacity: 80%;
+}
+
+.pMenu {
+  font-size: 2rem;
+}
+
+.menu {
+  border: black 3px solid;
+  border-radius: 3rem;
+  padding: 1rem;
+  color: black;
+  font-size: 3rem;
+  /* display: flex;
+  justify-content: center; */
+  margin-top: 3rem;
+}
+
+/********* CONTACTO **********/
+
+.fondoContacto {
+  width: 100%;
+  height: 60rem;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fondoContacto h2 {
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+form {
+  margin: auto;
+  width: 50rem;
+}
+
+.campo {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+textarea {
+  min-height: 10rem;
+  max-height: 20rem;
+}
+
+.botonEnviar {
+  background-color:rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 50%;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.botonEnviar:hover {
+  cursor: pointer;
+  background-color: #4c4c4b;
+}
+
+/********* UBICACION **********/
+
+.fondoUbicacion {
+  width: 100%;
+  height: 60rem;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mapa {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90%;
+}
+
+/********* NOSOTROS **********/
+
+.fondoNosotros {
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/nosotros.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.pasteleria {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 10rem 10rem 10rem 10rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10rem 5rem 5rem 5rem;
+  color: black;
+  grid-area: pasteleria;
+}
+
+.fondoNosotros h2 {
+  margin-bottom: 3rem;
+}
+
+.especialidad {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 10rem 10rem 10rem 10rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10rem 5rem 5rem 5rem;
+  color: black;
+  grid-area: especialidad;
+}
+
+/********* VERSIÓN CELULAR **********/
+
+@media (max-width:480px) {
+
+ /* HEADER */
+
+.cajaPrincipal ul {
+ display: none;
+}
+
+/* MAIN */
+
+.fondo {
+  width: 40rem;
+}
+
+ /* FOOTER */
+
+ .footerContent {
+  height: 20rem;
+  display: grid;
+  grid-template-areas: 
+  "direccion"
+  "horarios"
+  "instagram";
+ }
+
+ .footerContent .horarios {
+  padding-left: 3rem;
+ }
+
+ .footerContent .instagram {
+  padding-left: 3rem;
+ }
+
+ /* CONTACTO */
+
+ .fondoContacto {
+  width: 100%;
+ }
+
+ .fondoContacto .campo {
+  width: 80%;
+  margin-left: 2rem;
+ }
+
+ .botonEnviar {
+  margin-left: 2rem;
+ }
+
+ .fondoContacto h2 {
+  font-size: 2rem;
+  padding-right: 5rem;
+ }
+
+ /* NOSOTROS */
+
+ .fondoNosotros {
+  height: 120rem;
+  display: grid;
+  grid-template-areas: 
+  "pasteleria"
+  "especialidad";
+ }
+
+ .pasteleria {
+  margin-bottom: 7rem;
+ }
+
+/* 
+ .especialidad {
+  padding-bottom: 7rem;
+ } */
+
+
+}
+
