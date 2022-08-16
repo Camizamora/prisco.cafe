@@ -33,6 +33,8 @@ body {
   position: sticky;
   top: 0;
   grid-area: header;
+  /* DESAFIO TRANSFORMACIÓN */
+  background: linear-gradient(to right, #175a66, #69b8b9, #175a66);
 }
 
 .cajaPrincipal ul {
@@ -115,6 +117,10 @@ body {
   grid-area: instagram;
 }
 
+.instagram:hover {
+  opacity: 1;
+}
+
 /********* MENU **********/
 
 .fondoMenu {
@@ -189,16 +195,20 @@ textarea {
 }
 
 .botonEnviar {
-  background-color:rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   width: 50%;
   padding: 1rem;
   font-size: 1.5rem;
+  /* DESAFIO TRANSICIÓN */
+  transition: all 0.2s;
 }
 
 .botonEnviar:hover {
   cursor: pointer;
   background-color: #4c4c4b;
+  /* DESAFIO TRANSFORMACIÓN */
+  transform: scale(0.98, 0.98);
 }
 
 /********* UBICACION **********/
@@ -258,78 +268,74 @@ textarea {
 
 /********* VERSIÓN CELULAR **********/
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
+  /* HEADER */
 
- /* HEADER */
+  .cajaPrincipal ul {
+    display: none;
+  }
 
-.cajaPrincipal ul {
- display: none;
-}
+  /* MAIN */
 
-/* MAIN */
+  .fondo {
+    width: 40rem;
+  }
 
-.fondo {
-  width: 40rem;
-}
+  /* FOOTER */
 
- /* FOOTER */
+  .footerContent {
+    height: 20rem;
+    display: grid;
+    grid-template-areas:
+      "direccion"
+      "horarios"
+      "instagram";
+  }
 
- .footerContent {
-  height: 20rem;
-  display: grid;
-  grid-template-areas: 
-  "direccion"
-  "horarios"
-  "instagram";
- }
+  .footerContent .horarios {
+    padding-left: 3rem;
+  }
 
- .footerContent .horarios {
-  padding-left: 3rem;
- }
+  .footerContent .instagram {
+    padding-left: 3rem;
+  }
 
- .footerContent .instagram {
-  padding-left: 3rem;
- }
+  /* CONTACTO */
 
- /* CONTACTO */
+  .fondoContacto {
+    width: 100%;
+  }
 
- .fondoContacto {
-  width: 100%;
- }
+  .fondoContacto .campo {
+    width: 80%;
+    margin-left: 2rem;
+  }
 
- .fondoContacto .campo {
-  width: 80%;
-  margin-left: 2rem;
- }
+  .botonEnviar {
+    margin-left: 2rem;
+  }
 
- .botonEnviar {
-  margin-left: 2rem;
- }
+  .fondoContacto h2 {
+    font-size: 2rem;
+    padding-right: 5rem;
+  }
 
- .fondoContacto h2 {
-  font-size: 2rem;
-  padding-right: 5rem;
- }
+  /* NOSOTROS */
 
- /* NOSOTROS */
+  .fondoNosotros {
+    height: 120rem;
+    display: grid;
+    grid-template-areas:
+      "pasteleria"
+      "especialidad";
+  }
 
- .fondoNosotros {
-  height: 120rem;
-  display: grid;
-  grid-template-areas: 
-  "pasteleria"
-  "especialidad";
- }
+  .pasteleria {
+    margin-bottom: 7rem;
+  }
 
- .pasteleria {
-  margin-bottom: 7rem;
- }
-
-/* 
+  /* 
  .especialidad {
   padding-bottom: 7rem;
  } */
-
-
 }
-
