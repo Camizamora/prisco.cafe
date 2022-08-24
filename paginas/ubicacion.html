@@ -18,14 +18,21 @@
     <body>
 
       <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" id="navBar">
           <div class="container-fluid">
-            <a class="navbar-brand" href="."></a>
             <figure>
-              <a href="../index.html"><img src="../img/logoPrisco-sinFondo100.png" class="logo" alt=""
+              <a href="../index.html"
+                ><img src="../img/logoPrisco-sinFondo100.png" class="logo" alt=""
               /></a>
             </figure>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button
+              class="navbar-toggler botonHamburguesa"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -48,22 +55,9 @@
         </nav>
       </header>
 
-      <!-- <header class="cajaPrincipal">
-      <a href="../index.html"
-        ><img src="../img/logoPrisco-sinFondo100.png" class="logo" alt=""
-      /></a>
-      <nav>
-        <ul>
-          <li><a href="contacto.html">CONTACTO</a></li>
-          <li><a href="menu.html">MENÚ</a></li>
-          <li><a href="nosotros.html">NOSOTROS</a></li>
-          <li><a href="ubicacion.html">UBICACIÓN</a></li>
-        </ul>
-      </nav>
-    </header> -->
-
       <main class="fondoUbicacion">
-        <iframe
+        <div class="contenedorMapa">
+          <iframe
           class="mapa"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13126.641752111595!2d-58.5823437!3d-34.6632775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb48d9e674b3ac31e!2sPrisco!5e0!3m2!1ses!2sar!4v1659791798596!5m2!1ses!2sar"
           width="600"
@@ -73,6 +67,7 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
+        </div>
       </main>
 
       <footer class="footerContent">
@@ -80,7 +75,7 @@
           <h2>dirección</h2>
           <p>Monseñor Marcón 888, Villa Luzuriaga</p>
         </div>
-        <div>
+        <div class="horarios">
           <h2>horarios</h2>
           <p>Miércoles a Domingos de 9:30 a 13 hs y de 16:30 a 20:30 hs</p>
         </div>

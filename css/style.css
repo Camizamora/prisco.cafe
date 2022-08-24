@@ -9,8 +9,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  box-sizing: border-box;
 }
 
 a {
@@ -24,36 +22,29 @@ body {
 
 /********* HEADER *********/
 
-.navbar {
+#navBar {
   background: #175a66;
   height: 10rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
-.navbar ul {
-  font-size: 2rem;
+#navBar ul {
+  font-family: "BurfordW03-Base";
+  font-size: 3rem;
   color: #f0e8e1;
   list-style: none;
   padding-right: 2rem;
 }
 
-/******** MAIN INDEX *********/
+#navbarNav {
+  background-color: #175a66;
+}
 
-/* .fondo {
-  padding: 10rem 50rem 20rem 50rem;
-  background-image: url("../img/prisco.jpeg");
-  background-position: center;
-  width: 100%;
-  height: 90vh;
-  opacity: 80%;
-  grid-area: fondo;
-} */
-
-.fondo #priscoCafePane {
-  font-family: "BurfordW03-Base";
-  font-size: 4rem;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 10rem;
+.botonHamburguesa {
+  height: 5rem;
+  width: 5rem;
 }
 
 /********* FOOTER ************/
@@ -61,17 +52,16 @@ body {
 .footerContent {
   display: flex;
   width: 100%;
-  height: 8rem;
+  height: 9rem;
   background-color: #f0e8e1;
   justify-content: space-between;
-  grid-area: footer;
-}
-
-.footerContent p {
-  font-size: 0.8rem;
 }
 
 .footerContent h2 {
+  font-size: 1.5rem;
+}
+
+.footerContent p {
   font-size: 1rem;
 }
 
@@ -90,7 +80,7 @@ body {
 
 .instagram {
   opacity: 80%;
-  margin-right: 10rem;
+  margin-right: 8rem;
   grid-area: instagram;
 }
 
@@ -101,7 +91,12 @@ body {
 /********* MENU **********/
 
 .fondoMenu {
-  /* padding: 10rem 50rem 20rem 50rem; */
+  width: 100%;
+  height: 100vh;
+}
+
+/* .fondoMenu {
+  padding: 10rem 50rem 20rem 50rem;
   background-image: url(../img/mesa3.jpeg);
   background-position: center;
   background-size: cover;
@@ -109,7 +104,7 @@ body {
   height: 100vh;
   opacity: 80%;
   position: relative;
-} 
+}
 
 .pMenu {
   font-size: 2rem;
@@ -121,11 +116,11 @@ body {
   padding: 1rem;
   color: black;
   font-size: 3rem;
-  /* margin-top: 3rem; */
-  /* text-align: center; */
+  margin-top: 3rem;
+  text-align: center;
 }
 
-/* .contenedorMenu {
+.contenedorMenu {
 margin-left: 50%;
 margin-right: 50%;
 }
@@ -139,7 +134,7 @@ margin-right: 50%;
 
 .fondoContacto {
   width: 100%;
-  height: 60rem;
+  height: 70rem;
   background-color: aliceblue;
   display: flex;
   align-items: center;
@@ -148,8 +143,8 @@ margin-right: 50%;
 }
 
 .fondoContacto h2 {
-  padding-top: 5rem;
-  margin-bottom: 2rem;
+  padding-top: 13rem;
+  margin-bottom: 1rem;
   font-size: 2.5rem;
   text-align: center;
 }
@@ -177,14 +172,12 @@ textarea {
   width: 50%;
   padding: 1rem;
   font-size: 1.5rem;
-  /* DESAFIO TRANSICIÓN */
   transition: all 0.2s;
 }
 
 .botonEnviar:hover {
   cursor: pointer;
   background-color: #4c4c4b;
-  /* DESAFIO TRANSFORMACIÓN */
   transform: scale(0.98, 0.98);
 }
 
@@ -192,19 +185,18 @@ textarea {
 
 .fondoUbicacion {
   width: 100%;
-  height: 60rem;
+  height: 70rem;
   background-color: aliceblue;
+}
+
+.contenedorMapa {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .mapa {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
   width: 90%;
+  margin-top: 17rem;
 }
 
 /********* NOSOTROS **********/
@@ -248,20 +240,20 @@ textarea {
 @media (max-width: 480px) {
   /* HEADER */
 
-  .cajaPrincipal ul {
-    display: none;
+  #navBar {
+    height: 11rem;
   }
 
-  /* MAIN */
+  /* MAIN INDEX */
 
-  .fondo {
-    width: 40rem;
+  .imgMain {
+    padding-top: 7rem;
   }
 
   /* FOOTER */
 
   .footerContent {
-    height: 20rem;
+    height: 23rem;
     display: grid;
     grid-template-areas:
       "direccion"
@@ -279,9 +271,9 @@ textarea {
 
   /* CONTACTO */
 
-  .fondoContacto {
+  /* .fondoContacto {
     width: 100%;
-  }
+  } */
 
   .fondoContacto .campo {
     width: 80%;
@@ -310,9 +302,40 @@ textarea {
   .pasteleria {
     margin-bottom: 7rem;
   }
+}
 
-  /* 
- .especialidad {
-  padding-bottom: 7rem;
- } */
+/********* VERSIÓN TABLET **********/
+
+@media (min-width: 480px) and (max-width: 720px) {
+
+  /* HEADER */
+
+  #navBar {
+    height: 11rem;
+  }
+
+  /* MAIN INDEX */
+
+  .imgMain {
+    padding-top: 7rem;
+  }
+
+  /* FOOTER */
+
+  .footerContent {
+    height: 23rem;
+    display: grid;
+    grid-template-areas:
+      "direccion"
+      "horarios"
+      "instagram";
+  }
+
+  .footerContent .horarios {
+    padding-left: 3rem;
+  }
+
+  .footerContent .instagram {
+    padding-left: 3rem;
+  }
 }
