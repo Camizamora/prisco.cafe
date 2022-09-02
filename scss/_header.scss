@@ -1,0 +1,43 @@
+#navBar {
+    background: #175a66;
+    height: 10rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+  
+    ul {
+      font-family: $tipografiaNav;
+      font-size: 3rem;
+      color: #f0e8e1;
+      list-style: none;
+      padding-right: 2rem;
+    }
+  }
+  
+  #navbarNav {
+    background-color: #175a66;
+  }
+  
+  .botonHamburguesa {
+    height: 5rem;
+    width: 5rem;
+  }
+
+/********* VERSIÓN TABLET **********/
+
+@media (min-width: 480px) and (max-width: 760px) {
+
+  #navBar {
+      height: 11rem;
+    }
+}
+
+/********* VERSIÓN CELULAR **********/
+
+@media (max-width: 480px) {
+
+  #navBar {
+      height: 11rem;
+    }
+}
