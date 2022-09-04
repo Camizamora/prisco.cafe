@@ -1,12 +1,16 @@
 @charset "UTF-8";
 @import url(//db.onlinewebfonts.com/c/710f298ac37279ec3ab18f0e5cd94f55?family=Novecento+DemiBold);
 @import url(//db.onlinewebfonts.com/c/effe415ccccc9b5e5cc36bed338d8cea?family=BurfordW03-Base);
+body {
+  font-family: "Novecento DemiBold"; }
+
 #navBar {
   background: #175a66;
   height: 10rem;
   width: 100%;
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 3; }
   #navBar ul {
     font-family: "BurfordW03-Base";
     font-size: 3rem;
@@ -21,74 +25,38 @@
   height: 5rem;
   width: 5rem; }
 
-.footerContent {
-  display: flex;
-  width: 100%;
-  height: 9rem;
-  background-color: #f0e8e1;
-  justify-content: space-between; }
-  .footerContent h2 {
-    font-size: 2rem; }
-  .footerContent p {
-    font-size: 1.5rem; }
-  .footerContent div {
-    margin-top: 2rem; }
+/********* VERSIÓN TABLET **********/
+@media (min-width: 480px) and (max-width: 760px) {
+  #navBar {
+    height: 11rem; } }
 
-.direccion {
-  margin-left: 3rem;
-  grid-area: direccion; }
-
-.horarios {
-  grid-area: horarios; }
-
-.instagram {
-  opacity: 80%;
-  margin-right: 8rem;
-  grid-area: instagram; }
-  .instagram:hover {
-    opacity: 1; }
-
-html {
-  font-size: 62.5%; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-a {
-  text-decoration: none;
-  color: black; }
-
-body {
-  font-family: "Novecento DemiBold"; }
+/********* VERSIÓN CELULAR **********/
+@media (max-width: 480px) {
+  #navBar {
+    height: 11rem; } }
 
 /********* MENU **********/
 .fondoMenu {
   margin-top: 10rem; }
   .fondoMenu .imgCarousel {
-    height: 80vh;
+    height: 85vh;
     object-fit: cover; }
   .fondoMenu .menu {
     text-align: center;
     font-size: 5rem;
-    margin-bottom: 20rem; }
+    margin-bottom: 20rem;
+    transition: all 0.2s; }
     .fondoMenu .menu:hover {
-      color: #175a66; }
+      color: #175a66;
+      cursor: pointer;
+      transform: scale(0.98, 0.98); }
 
 /********* CONTACTO **********/
-.fondoContacto {
-  width: 100%;
-  height: 70rem;
-  background-color: aliceblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-  .fondoContacto h1 {
-    padding-top: 13rem;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    text-align: center; }
+.fondoContacto h1 {
+  padding-top: 13rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  text-align: center; }
 
 form {
   margin: auto;
@@ -117,10 +85,9 @@ textarea {
     transform: scale(0.98, 0.98); }
 
 /********* UBICACION **********/
-.fondoUbicacion {
-  width: 100%;
-  height: 70rem;
-  background-color: aliceblue; }
+.fondoUbicacion h1, .fondoContacto h1 {
+  padding-top: 20vh;
+  text-align: center; }
 
 .contenedorMapa {
   display: flex;
@@ -128,45 +95,84 @@ textarea {
 
 .mapa {
   width: 90%;
-  margin-top: 17rem; }
+  margin-top: 3rem; }
+
+/********* NOSOTROS **********/
+.fondoNosotros {
+  background-image: url(../img/nosotros4b.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover; }
+  .fondoNosotros h1 {
+    padding-top: 20vh;
+    text-align: center;
+    font-size: 3rem;
+    color: #f0e8e1;
+    text-shadow: 2px 2px black; }
+  .fondoNosotros .contenedorDescripcion {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem; }
+
+.footerContent {
+  display: flex;
+  width: 100%;
+  height: 9rem;
+  background-color: #f0e8e1;
+  justify-content: space-between; }
+  .footerContent h2 {
+    font-size: 2rem; }
+  .footerContent p {
+    font-size: 1.5rem; }
+  .footerContent div {
+    margin-top: 2rem; }
+
+.direccion {
+  margin-left: 3rem;
+  grid-area: direccion; }
+
+.horarios {
+  grid-area: horarios; }
+
+.instagram {
+  opacity: 80%;
+  margin-right: 8rem;
+  grid-area: instagram; }
+  .instagram:hover {
+    opacity: 1; }
 
 /********* VERSIÓN TABLET **********/
 @media (min-width: 480px) and (max-width: 760px) {
-  /* HEADER */
-  #navBar {
-    height: 11rem; }
-  /* MAIN INDEX */
-  .imgMain {
-    padding-top: 7rem; }
-  /* FOOTER */
   .footerContent {
-    height: 23rem;
+    height: 30rem;
     display: grid;
     grid-template-areas: "direccion" "horarios" "instagram"; }
-    .footerContent .horarios,
+    .footerContent .horarios {
+      padding-left: 3rem; }
     .footerContent .instagram {
       padding-left: 3rem; } }
 
-/* MENU */
-.menu {
-  margin-bottom: 0; }
-
 /********* VERSIÓN CELULAR **********/
 @media (max-width: 480px) {
-  /* HEADER */
-  #navBar {
-    height: 11rem; }
+  .footerContent {
+    height: 30rem;
+    display: grid;
+    grid-template-areas: "direccion" "horarios" "instagram"; }
+    .footerContent .horarios, .footerContent .instagram {
+      padding-left: 3rem; } }
+
+/********* VERSIÓN TABLET **********/
+@media (min-width: 480px) and (max-width: 760px) {
   /* MAIN INDEX */
   .imgMain {
     padding-top: 7rem; }
-  /* FOOTER */
-  .footerContent {
-    height: 23rem;
-    display: grid;
-    grid-template-areas: "direccion" "horarios" "instagram"; }
-    .footerContent .horarios,
-    .footerContent .instagram {
-      padding-left: 3rem; }
+  /* MENU */ }
+
+/********* VERSIÓN CELULAR **********/
+@media (max-width: 480px) {
+  /* MAIN INDEX */
+  .imgMain {
+    padding-top: 7rem; }
   /* CONTACTO */
   .fondoContacto {
     width: 100%; }
@@ -174,11 +180,57 @@ textarea {
     width: 80%; }
   .fondoContacto h2 {
     font-size: 2rem;
-    padding-right: 5rem; }
-  /* NOSOTROS */
-  .fondoNosotros {
-    height: 120rem;
-    display: grid;
-    grid-template-areas: "pasteleria" "especialidad"; }
-  .pasteleria {
-    margin-bottom: 7rem; } }
+    padding-right: 5rem; } }
+
+/* EXTEND */
+.fondoUbicacion, .fondoContacto {
+  width: 100%;
+  height: 70rem;
+  background-color: aliceblue; }
+
+.fondoContacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+/* MIXIN */
+.tituloNosotros {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px black;
+  text-align: center; }
+
+.pasteleria {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f0e8e1;
+  width: 50vw;
+  height: 50vh;
+  padding: 8rem;
+  margin-left: 5rem;
+  margin-right: 5rem; }
+
+.especialidad {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f0e8e1;
+  width: 50vw;
+  height: 50vh;
+  padding: 8rem;
+  margin-left: 5rem;
+  margin-right: 5rem; }
+
+/* MAP GET */
+.descripcionNosotros {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px black; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }

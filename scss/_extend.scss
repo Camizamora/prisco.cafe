@@ -1,0 +1,15 @@
+/* EXTEND */
+
+.fondoUbicacion {
+    width: 100%;
+    height: 70rem;
+    background-color: $colorFondo;
+}
+
+.fondoContacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @extend .fondoUbicacion
+}

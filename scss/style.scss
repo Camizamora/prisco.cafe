@@ -1,9 +1,17 @@
 @import url(//db.onlinewebfonts.com/c/710f298ac37279ec3ab18f0e5cd94f55?family=Novecento+DemiBold);
 
+body {
+  font-family: "Novecento DemiBold";
+}
+
 @import "variables";
 @import "header";
-@import "footer";
 @import "main";
+@import "footer";
+@import "mediasquery";
+@import "extend";
+@import "mixin";
+@import "mapget";
 
 html {
   font-size: 62.5%;
@@ -18,10 +26,3 @@ a {
   text-decoration: none;
   color: black;
 }
-
-body {
-  font-family: "Novecento DemiBold";
-}
-
-// MAIN
-
