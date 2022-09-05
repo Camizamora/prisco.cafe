@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import url(//db.onlinewebfonts.com/c/710f298ac37279ec3ab18f0e5cd94f55?family=Novecento+DemiBold);
+@import url(//db.onlinewebfonts.com/c/d99084331b93ea456d1d0f9ce08b7777?family=NovecentoSansW01-Book);
 @import url(//db.onlinewebfonts.com/c/effe415ccccc9b5e5cc36bed338d8cea?family=BurfordW03-Base);
 body {
-  font-family: "Novecento DemiBold"; }
+  font-family: "NovecentoSansW01-Book"; }
 
 #navBar {
   background: #175a66;
@@ -13,7 +13,7 @@ body {
   z-index: 3; }
   #navBar ul {
     font-family: "BurfordW03-Base";
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #f0e8e1;
     list-style: none;
     padding-right: 2rem; }
@@ -43,20 +43,19 @@ body {
     object-fit: cover; }
   .fondoMenu .menu {
     text-align: center;
-    font-size: 5rem;
-    margin-bottom: 20rem;
-    transition: all 0.2s; }
+    font-size: 5.5rem;
+    font-weight: bold;
+    margin-bottom: 20rem; }
     .fondoMenu .menu:hover {
-      color: #175a66;
-      cursor: pointer;
-      transform: scale(0.98, 0.98); }
+      color: #175a66; }
 
 /********* CONTACTO **********/
 .fondoContacto h1 {
   padding-top: 13rem;
   margin-bottom: 1rem;
-  font-size: 2.5rem;
-  text-align: center; }
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold; }
 
 form {
   margin: auto;
@@ -66,7 +65,8 @@ form {
   width: 100%;
   margin-bottom: 2rem;
   padding: 1rem;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-transform: uppercase; }
 
 textarea {
   min-height: 10rem;
@@ -87,7 +87,9 @@ textarea {
 /********* UBICACION **********/
 .fondoUbicacion h1, .fondoContacto h1 {
   padding-top: 20vh;
-  text-align: center; }
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold; }
 
 .contenedorMapa {
   display: flex;
@@ -106,24 +108,29 @@ textarea {
   .fondoNosotros h1 {
     padding-top: 20vh;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     color: #f0e8e1;
     text-shadow: 2px 2px black; }
   .fondoNosotros .contenedorDescripcion {
     display: flex;
     justify-content: space-between;
     padding-top: 5rem; }
+    .fondoNosotros .contenedorDescripcion .pasteleria {
+      grid-area: pasteleria; }
+    .fondoNosotros .contenedorDescripcion .especialidad {
+      grid-area: especialidad; }
 
 .footerContent {
   display: flex;
   width: 100%;
-  height: 9rem;
+  height: 10rem;
   background-color: #f0e8e1;
   justify-content: space-between; }
   .footerContent h2 {
-    font-size: 2rem; }
+    font-size: 2.5rem;
+    font-weight: bold; }
   .footerContent p {
-    font-size: 1.5rem; }
+    font-size: 2rem; }
   .footerContent div {
     margin-top: 2rem; }
 
@@ -166,7 +173,11 @@ textarea {
   /* MAIN INDEX */
   .imgMain {
     padding-top: 7rem; }
-  /* MENU */ }
+  /* NOSOTROS */
+  .contenedorDescripcion {
+    height: 150rem;
+    display: grid;
+    grid-template-areas: "pasteleria" "especialidad"; } }
 
 /********* VERSIÓN CELULAR **********/
 @media (max-width: 480px) {
@@ -180,7 +191,12 @@ textarea {
     width: 80%; }
   .fondoContacto h2 {
     font-size: 2rem;
-    padding-right: 5rem; } }
+    padding-right: 5rem; }
+  /* NOSOTROS */
+  .contenedorDescripcion {
+    height: 150rem;
+    display: grid;
+    grid-template-areas: "pasteleria" "especialidad"; } }
 
 /* EXTEND */
 .fondoUbicacion, .fondoContacto {
@@ -196,7 +212,8 @@ textarea {
 
 /* MIXIN */
 .tituloNosotros {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 1rem;
   text-shadow: 2px 2px black;
   text-align: center; }
@@ -206,22 +223,28 @@ textarea {
   color: #f0e8e1;
   width: 50vw;
   height: 50vh;
-  padding: 8rem;
   margin-left: 5rem;
-  margin-right: 5rem; }
+  margin-right: 5rem;
+  padding-bottom: 10rem;
+  padding-top: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem; }
 
 .especialidad {
   background-color: rgba(0, 0, 0, 0.6);
   color: #f0e8e1;
   width: 50vw;
   height: 50vh;
-  padding: 8rem;
   margin-left: 5rem;
-  margin-right: 5rem; }
+  margin-right: 5rem;
+  padding-bottom: 10rem;
+  padding-top: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem; }
 
 /* MAP GET */
 .descripcionNosotros {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-shadow: 2px 2px black; }
 
 html {

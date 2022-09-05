@@ -1,48 +1,55 @@
 /********* VERSIÓN TABLET **********/
-  
+
 @media (min-width: 480px) and (max-width: 760px) {
-  
-    /* MAIN INDEX */
-  
-    .imgMain {
-      padding-top: 7rem;
-    }
-  
-    /* MENU */
-  
-  //   .imgCarousel {
-  //     height: 120vh;
-  //   }
+  /* MAIN INDEX */
+
+  .imgMain {
+    padding-top: 7rem;
   }
-  
-  /********* VERSIÓN CELULAR **********/
-  
-  @media (max-width: 480px) {
-  
-    /* MAIN INDEX */
-  
-    .imgMain {
-      padding-top: 7rem;
-    }
-  
-    /* CONTACTO */
-  
-    .fondoContacto {
-      width: 100%;
-    }
-  
-    .fondoContacto .campo {
-      width: 80%;
-      // margin-left: 2rem;
-    }
-  
-  //   .botonEnviar {
-  //     margin-left: 2rem;
-  //   }
-  
-    .fondoContacto h2 {
-      font-size: 2rem;
-      padding-right: 5rem;
-    }
-  
+
+  /* NOSOTROS */
+
+  .contenedorDescripcion {
+    height: 150rem;
+    display: grid;
+    grid-template-areas:
+      "pasteleria"
+      "especialidad";
   }
+}
+
+/********* VERSIÓN CELULAR **********/
+
+@media (max-width: 480px) {
+  /* MAIN INDEX */
+
+  .imgMain {
+    padding-top: 7rem;
+  }
+
+  /* CONTACTO */
+
+  .fondoContacto {
+    width: 100%;
+  }
+
+  .fondoContacto .campo {
+    width: 80%;
+    // margin-left: 2rem;
+  }
+
+  .fondoContacto h2 {
+    font-size: 2rem;
+    padding-right: 5rem;
+  }
+
+  /* NOSOTROS */
+
+  .contenedorDescripcion {
+    height: 150rem;
+    display: grid;
+    grid-template-areas:
+      "pasteleria"
+      "especialidad";
+  }
+}

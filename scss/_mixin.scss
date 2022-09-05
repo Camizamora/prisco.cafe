@@ -1,7 +1,8 @@
 /* MIXIN */
 
 @mixin titulo {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
     margin-bottom: 1rem;
     text-shadow: 2px 2px black;
     text-align: center;
@@ -16,9 +17,12 @@
     color: #f0e8e1;
     width: 50vw;
     height: 50vh;
-    padding: 8rem;
     margin-left: 5rem;
     margin-right: 5rem;    
+    padding-bottom: 10rem;
+    padding-top: 3rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 .pasteleria {

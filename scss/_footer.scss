@@ -1,16 +1,17 @@
 .footerContent {
     display: flex;
     width: 100%;
-    height: 9rem;
+    height: 10rem;
     background-color: #f0e8e1;
     justify-content: space-between;
   
     h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      font-weight: bold;
     }
   
     p {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   
     div {
