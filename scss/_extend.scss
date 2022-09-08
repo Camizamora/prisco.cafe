@@ -2,14 +2,28 @@
 
 .fondoUbicacion {
     width: 100%;
-    height: 70rem;
+    height: 85rem;
     background-color: $colorFondo;
+    margin: 0;
 }
 
 .fondoContacto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     @extend .fondoUbicacion
 }
+
+
+.pasteleria {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f0e8e1;
+    width: 40vw;
+    height: 50vh;
+    text-align: center;
+    padding: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.especialidad {
+    @extend .pasteleria
+}
+

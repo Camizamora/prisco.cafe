@@ -1,6 +1,6 @@
 /********* VERSIÓN TABLET **********/
 
-@media (min-width: 480px) and (max-width: 760px) {
+@media (min-width: 480px) and (max-width: 900px) {
   /* MAIN INDEX */
 
   .imgMain {
@@ -9,13 +9,29 @@
 
   /* NOSOTROS */
 
-  .contenedorDescripcion {
-    height: 150rem;
-    display: grid;
-    grid-template-areas:
-      "pasteleria"
-      "especialidad";
-  }
+  .fondoNosotros {
+    height: 120vh;
+    background-image: url(../img/nosotros4.jpg);
+  
+    h1 {
+      padding-top: 15vh;
+     }
+   }
+  
+   .contenedorDescripcion {
+    flex-wrap: wrap;
+    
+    .pasteleria {
+      width: 90%;
+      height: 30rem;
+    }
+  
+    .especialidad {
+      width: 90%;
+      height: 30rem;
+      margin-top: 5rem;
+    }
+   }
 }
 
 /********* VERSIÓN CELULAR **********/
@@ -29,27 +45,33 @@
 
   /* CONTACTO */
 
-  .fondoContacto {
-    width: 100%;
-  }
-
-  .fondoContacto .campo {
-    width: 80%;
-    // margin-left: 2rem;
-  }
-
-  .fondoContacto h2 {
-    font-size: 2rem;
-    padding-right: 5rem;
+  .contenedorContacto {
+    width: 100%
   }
 
   /* NOSOTROS */
 
-  .contenedorDescripcion {
-    height: 150rem;
-    display: grid;
-    grid-template-areas:
-      "pasteleria"
-      "especialidad";
+ .fondoNosotros {
+  height: 150vh;
+  background-image: url(../img/nosotros4.jpg);
+
+  h1 {
+    padding-top: 15vh;
+   }
+ }
+
+ .contenedorDescripcion {
+  flex-wrap: wrap;
+  
+  .pasteleria {
+    width: 90%;
+    height: 40rem;
   }
+
+  .especialidad {
+    width: 90%;
+    height: 40rem;
+    margin-top: 5rem;
+  }
+ }
 }

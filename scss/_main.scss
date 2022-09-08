@@ -22,47 +22,52 @@
 
 /********* CONTACTO **********/
 
-.fondoContacto {
+.contenedorContacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 50rem;
+  padding: 1rem 2rem;
 
   h1 {
     padding-top: 13rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
+    text-transform: uppercase;
   }
-}
 
-form {
-  margin: auto;
-  width: 50rem;
-}
+  .campo {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
 
-.campo {
-  width: 100%;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
+  textarea {
+    min-height: 10rem;
+    max-height: 20rem;
+  }
 
-textarea {
-  min-height: 10rem;
-  max-height: 20rem;
-}
-
-.botonEnviar {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  width: 50%;
-  padding: 1rem;
-  font-size: 1.5rem;
-  transition: all 0.2s;
-
-  &:hover {
-    cursor: pointer;
-    background-color: #4c4c4b;
-    transform: scale(0.98, 0.98);
+  .botonEnviar {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    border: none;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: #4c4c4b;
+      transform: scale(0.98, 0.98);
+    }
   }
 }
 
@@ -74,6 +79,7 @@ textarea {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
+    text-transform: uppercase;
   }
 }
 
@@ -101,19 +107,27 @@ textarea {
     font-size: 5rem;
     color: #f0e8e1;
     text-shadow: 2px 2px black;
+    text-transform: uppercase;
   }
 
   .contenedorDescripcion {
     display: flex;
     justify-content: space-between;
-    padding-top: 5rem;
+    padding-top: 3rem;
+    align-items: center;
 
-    .pasteleria {
-      grid-area: pasteleria;
+    h2 {
+      font-size: 3.5rem;
     }
 
-    .especialidad {
-      grid-area: especialidad;
+    p {
+      padding-top: 2rem;
     }
   }
+}
+
+/********* MAIN INDEX **********/
+
+.imgMain {
+  width: 100%;
 }

@@ -8,10 +8,9 @@ body {
 @import "header";
 @import "main";
 @import "footer";
-@import "mediasquery";
 @import "extend";
-@import "mixin";
 @import "mapget";
+@import "mediasquery";
 
 html {
   font-size: 62.5%;
