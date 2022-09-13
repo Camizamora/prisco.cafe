@@ -6,14 +6,16 @@ body {
 
 #navBar {
   background: #175a66;
-  height: 10rem;
+  height: 9rem;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 3; }
+  #navBar figure {
+    padding-top: 0.5rem; }
   #navBar ul {
     font-family: "BurfordW03-Base";
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #f0e8e1;
     list-style: none;
     padding-right: 2rem; }
@@ -37,7 +39,7 @@ body {
 
 /********* MENU **********/
 .fondoMenu {
-  margin-top: 10rem; }
+  margin-top: 9rem; }
   .fondoMenu .imgCarousel {
     height: 85vh;
     object-fit: cover; }
@@ -90,7 +92,7 @@ body {
 
 /********* UBICACION **********/
 .fondoUbicacion h1, .fondoContacto h1 {
-  padding-top: 20vh;
+  padding-top: 22vh;
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
@@ -108,12 +110,12 @@ body {
 .fondoNosotros {
   background-image: url(../img/nosotros4b.jpg);
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-size: cover; }
   .fondoNosotros h1 {
-    padding-top: 20vh;
+    padding-top: 22vh;
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     color: #f0e8e1;
     text-shadow: 2px 2px black;
     text-transform: uppercase; }
@@ -123,18 +125,20 @@ body {
     padding-top: 3rem;
     align-items: center; }
     .fondoNosotros .contenedorDescripcion h2 {
-      font-size: 3.5rem; }
+      font-size: 3rem; }
     .fondoNosotros .contenedorDescripcion p {
-      padding-top: 2rem; }
+      padding-top: 1rem; }
 
 /********* MAIN INDEX **********/
 .imgMain {
-  width: 100%; }
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; }
 
 .footerContent {
   display: flex;
   width: 100%;
-  height: 10rem;
+  height: 8rem;
   background-color: #f0e8e1;
   justify-content: space-between; }
   .footerContent h2 {
@@ -143,21 +147,18 @@ body {
   .footerContent p {
     font-size: 2rem; }
   .footerContent div {
-    margin-top: 2rem; }
-
-.direccion {
-  margin-left: 3rem;
-  grid-area: direccion; }
-
-.horarios {
-  grid-area: horarios; }
-
-.instagram {
-  opacity: 80%;
-  margin-right: 8rem;
-  grid-area: instagram; }
-  .instagram:hover {
-    opacity: 1; }
+    margin-top: 1rem; }
+  .footerContent .direccion {
+    margin-left: 3rem;
+    grid-area: direccion; }
+  .footerContent .horarios {
+    grid-area: horarios; }
+  .footerContent .instagram {
+    opacity: 80%;
+    margin-right: 8rem;
+    grid-area: instagram; }
+    .footerContent .instagram:hover {
+      opacity: 1; }
 
 /********* VERSIÓN TABLET **********/
 @media (min-width: 480px) and (max-width: 760px) {
@@ -176,13 +177,14 @@ body {
     height: 30rem;
     display: grid;
     grid-template-areas: "direccion" "horarios" "instagram"; }
-    .footerContent .horarios, .footerContent .instagram {
+    .footerContent .horarios,
+    .footerContent .instagram {
       padding-left: 3rem; } }
 
 /* EXTEND */
 .fondoUbicacion, .fondoContacto {
   width: 100%;
-  height: 85rem;
+  height: 75rem;
   background-color: aliceblue;
   margin: 0; }
 
@@ -190,7 +192,7 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   color: #f0e8e1;
   width: 40vw;
-  height: 50vh;
+  height: 60vh;
   text-align: center;
   padding: 3rem;
   margin-left: 5rem;
@@ -199,7 +201,7 @@ body {
 /* MAP GET */
 .descripcionNosotros {
   font-size: 2rem;
-  text-shadow: 2px 2px black; }
+  text-shadow: 1px 1px black; }
 
 /********* VERSIÓN TABLET **********/
 @media (min-width: 480px) and (max-width: 900px) {

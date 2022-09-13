@@ -1,7 +1,7 @@
 /********* MENU **********/
 
 .fondoMenu {
-  margin-top: 10rem;
+  margin-top: 9rem;
 
   .imgCarousel {
     height: 85vh;
@@ -62,7 +62,7 @@
     transition: all 0.2s;
     text-transform: uppercase;
     border: none;
-    
+
     &:hover {
       cursor: pointer;
       background-color: #4c4c4b;
@@ -75,7 +75,7 @@
 
 .fondoUbicacion {
   h1 {
-    padding-top: 20vh;
+    padding-top: 22vh;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -98,13 +98,13 @@
 .fondoNosotros {
   background-image: url(../img/nosotros4b.jpg);
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-size: cover;
 
   h1 {
-    padding-top: 20vh;
+    padding-top: 22vh;
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     color: #f0e8e1;
     text-shadow: 2px 2px black;
     text-transform: uppercase;
@@ -117,11 +117,11 @@
     align-items: center;
 
     h2 {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
 
     p {
-      padding-top: 2rem;
+      padding-top: 1rem;
     }
   }
 }
@@ -130,4 +130,6 @@
 
 .imgMain {
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
