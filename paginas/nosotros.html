@@ -15,19 +15,16 @@
       crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+    <!-- FONT AWSOME -->
+    <script src="https://kit.fontawesome.com/76d2aacad3.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg" id="navBar">
         <div class="container-fluid">
-          <figure>
-            <a href="../index.html"
-              ><img
-                src="../img/logoPrisco-sinFondo100.png"
-                class="logo"
-                alt="logo"
-            /></a>
-          </figure>
+          <a class="contenedorLogo" href="../index.html"
+            ><img src="../img/logoSinFondo.png" class="logo" alt="logo"
+          /></a>
           <button
             class="navbar-toggler botonHamburguesa"
             type="button"
@@ -47,7 +44,7 @@
                 <a class="nav-link" href="../paginas/menu.html">MENÚ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="disabled">NOSOTROS</a>
+                <a class="nav-link disabled" id="disabled" href="disabled">NOSOTROS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../paginas/ubicacion.html">UBICACIÓN</a>
@@ -84,14 +81,18 @@
 
     <footer class="footerContent">
       <div class="direccion">
-        <h2>dirección</h2>
+        <h2> <i class="fa-solid fa-location-dot"></i> dirección</h2>
         <p>Monseñor Marcón 888, Villa Luzuriaga</p>
       </div>
-      <div class="horarios">
-        <h2>horarios</h2>
-        <p>Miércoles a Domingos de 9:30 a 13 hs y de 16:30 a 20:30 hs</p>
+      <div class="horarios footer">
+        <h2> <i class="fa-solid fa-clock"></i> horarios</h2>
+        <p>Miércoles a Domingos de 9 a 20:30 hs</p>
       </div>
-      <div>
+      <div class="email footer">
+        <h2><i class="fa-solid fa-envelope"></i> e-mail</h2>
+        <p>prisco.cafe@gmail.com</p>
+      </div>
+      <div class="footer">
         <a
           href="https://www.instagram.com/prisco.cafe/"
           target="_blank"

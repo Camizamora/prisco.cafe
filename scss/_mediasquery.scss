@@ -1,11 +1,6 @@
 /********* VERSIÓN TABLET **********/
 
 @media (min-width: 480px) and (max-width: 900px) {
-  /* MAIN INDEX */
-
-  .imgMain {
-    padding-top: 7rem;
-  }
 
   /* NOSOTROS */
 
@@ -37,16 +32,15 @@
 /********* VERSIÓN CELULAR **********/
 
 @media (max-width: 480px) {
-  /* MAIN INDEX */
-
-  .imgMain {
-    padding-top: 7rem;
-  }
 
   /* CONTACTO */
 
   .contenedorContacto {
     width: 100%
+  }
+
+  .tituloContacto {
+    margin-top: 5rem;
   }
 
   /* NOSOTROS */
