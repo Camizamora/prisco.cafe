@@ -97,21 +97,20 @@ body {
       transform: scale(0.98, 0.98); }
 
 /********* UBICACION **********/
-.fondoUbicacion, .fondoContacto {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-h1 {
+.fondoUbicacion h1, .fondoContacto h1 {
+  padding-top: 15rem;
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  text-transform: uppercase;
-  padding-bottom: 3rem; }
+  text-transform: uppercase; }
+
+.contenedorMapa {
+  display: flex;
+  justify-content: center; }
 
 .mapa {
-  padding-top: 2rem;
-  width: 100%; }
+  width: 90%;
+  margin-top: 5rem; }
 
 /********* NOSOTROS **********/
 .fondoNosotros {
