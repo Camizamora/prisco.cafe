@@ -1,4 +1,0 @@
-Cambios realizados.
-
-- Asigne un titulo que describe el contenido de cada página del proyecto.
-- Agregué una breve descripción en cada página.  
