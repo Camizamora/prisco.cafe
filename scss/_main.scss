@@ -1,11 +1,6 @@
 /********* MENU **********/
 
 .fondoMenu {
-<<<<<<< HEAD
-  margin-top: 9rem;
-
-=======
->>>>>>> este
   .imgCarousel {
     height: 100vh;
     object-fit: cover;
@@ -104,58 +99,6 @@
 
 /********* UBICACION **********/
 
-<<<<<<< HEAD
-.fondoUbicacion {
-  h1 {
-    padding-top: 22vh;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-}
-
-.contenedorMapa {
-  display: flex;
-  justify-content: center;
-}
-
-.mapa {
-  width: 90%;
-  margin-top: 3rem;
-}
-
-/********* NOSOTROS **********/
-
-.fondoNosotros {
-  background-image: url(../img/nosotros4b.jpg);
-  width: 100%;
-  height: 110vh;
-  background-size: cover;
-
-  h1 {
-    padding-top: 22vh;
-    text-align: center;
-    font-size: 4rem;
-    color: #f0e8e1;
-    text-shadow: 2px 2px black;
-    text-transform: uppercase;
-  }
-
-  .contenedorDescripcion {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3rem;
-    align-items: center;
-
-    h2 {
-      font-size: 3rem;
-    }
-
-    p {
-      padding-top: 1rem;
-    }
-=======
 .contenedorMapa {
   display: flex;
   justify-content: center;
@@ -163,19 +106,11 @@
   .mapa {
    width: 90%;
    margin-top: 5rem;
->>>>>>> este
   }
 }
 
 /********* MAIN INDEX **********/
 
-<<<<<<< HEAD
-.imgMain {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-=======
 .fondoMain {
   height: 100%;
 
@@ -269,4 +204,3 @@
     }
   }
 }
->>>>>>> este

@@ -5,14 +5,9 @@ body {
   font-family: 'Rubik', sans-serif; }
 
 #navBar {
-<<<<<<< HEAD
-  background: #175a66;
-  height: 9rem;
-=======
   background: black;
   opacity: 80%;
   height: 8rem;
->>>>>>> este
   width: 100%;
   position: fixed;
   top: 0;
@@ -21,12 +16,7 @@ body {
     padding-top: 0.5rem; }
   #navBar ul {
     font-family: "BurfordW03-Base";
-<<<<<<< HEAD
-    font-size: 3rem;
-    color: #f0e8e1;
-=======
     font-size: 3.5rem;
->>>>>>> este
     list-style: none;
     padding-right: 2rem; }
     #navBar ul #disabled {
@@ -60,16 +50,6 @@ body {
     height: 9.5rem; } }
 
 /********* MENU **********/
-<<<<<<< HEAD
-.fondoMenu {
-  margin-top: 9rem; }
-  .fondoMenu .imgCarousel {
-    height: 85vh;
-    object-fit: cover; }
-  .fondoMenu .menu {
-    text-align: center;
-    font-size: 5.5rem;
-=======
 .fondoMenu .imgCarousel {
   height: 100vh;
   object-fit: cover; }
@@ -81,7 +61,6 @@ body {
     height: 5rem;
     line-height: 5rem;
     font-size: 5rem;
->>>>>>> este
     font-weight: bold;
     overflow: hidden;
     position: absolute;
@@ -152,51 +131,6 @@ body {
       transform: scale(0.98, 0.98); }
 
 /********* UBICACION **********/
-<<<<<<< HEAD
-.fondoUbicacion h1, .fondoContacto h1 {
-  padding-top: 22vh;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.contenedorMapa {
-  display: flex;
-  justify-content: center; }
-
-.mapa {
-  width: 90%;
-  margin-top: 3rem; }
-
-/********* NOSOTROS **********/
-.fondoNosotros {
-  background-image: url(../img/nosotros4b.jpg);
-  width: 100%;
-  height: 110vh;
-  background-size: cover; }
-  .fondoNosotros h1 {
-    padding-top: 22vh;
-    text-align: center;
-    font-size: 4rem;
-    color: #f0e8e1;
-    text-shadow: 2px 2px black;
-    text-transform: uppercase; }
-  .fondoNosotros .contenedorDescripcion {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3rem;
-    align-items: center; }
-    .fondoNosotros .contenedorDescripcion h2 {
-      font-size: 3rem; }
-    .fondoNosotros .contenedorDescripcion p {
-      padding-top: 1rem; }
-
-/********* MAIN INDEX **********/
-.imgMain {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover; }
-=======
 .contenedorMapa {
   display: flex;
   justify-content: center; }
@@ -265,34 +199,10 @@ body {
       .contenedorCards .card .botonCarrito:hover {
         background-color: #4c4c4b;
         color: black; }
->>>>>>> este
 
 .footerContent {
   display: flex;
   width: 100%;
-<<<<<<< HEAD
-  height: 8rem;
-  background-color: #f0e8e1;
-  justify-content: space-between; }
-  .footerContent h2 {
-    font-size: 2.5rem;
-    font-weight: bold; }
-  .footerContent p {
-    font-size: 2rem; }
-  .footerContent div {
-    margin-top: 1rem; }
-  .footerContent .direccion {
-    margin-left: 3rem;
-    grid-area: direccion; }
-  .footerContent .horarios {
-    grid-area: horarios; }
-  .footerContent .instagram {
-    opacity: 80%;
-    margin-right: 8rem;
-    grid-area: instagram; }
-    .footerContent .instagram:hover {
-      opacity: 1; }
-=======
   height: 12rem;
   background-color: #175a66;
   justify-content: space-between;
@@ -324,7 +234,6 @@ body {
   grid-area: instagram; }
   .instagram:hover {
     opacity: 1; }
->>>>>>> este
 
 /********* VERSIÓN TABLET **********/
 @media (min-width: 480px) and (max-width: 900px) {
@@ -340,29 +249,12 @@ body {
   .footerContent {
     height: 40rem;
     display: grid;
-<<<<<<< HEAD
-    grid-template-areas: "direccion" "horarios" "instagram"; }
-    .footerContent .horarios,
-    .footerContent .instagram {
-=======
     grid-template-areas: "direccion" "horarios" "email" "instagram"; }
     .footerContent .footer {
->>>>>>> este
       padding-left: 3rem; } }
 
 .fondoUbicacion, .fondoContacto, .fondoTienda {
   width: 100%;
-<<<<<<< HEAD
-  height: 75rem;
-  background-color: aliceblue;
-  margin: 0; }
-
-.pasteleria, .especialidad {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #f0e8e1;
-  width: 40vw;
-  height: 60vh;
-=======
   height: 85rem;
   margin: 0; }
 
@@ -371,7 +263,6 @@ body {
 
 .tituloUbicacion, .tituloTienda, .tituloContacto {
   padding-top: 13rem;
->>>>>>> este
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
@@ -380,12 +271,7 @@ body {
 
 /* MAP GET */
 .descripcionNosotros {
-<<<<<<< HEAD
-  font-size: 2rem;
-  text-shadow: 1px 1px black; }
-=======
   font-size: 2rem; }
->>>>>>> este
 
 /********* VERSIÓN TABLET **********/
 @media (min-width: 480px) and (max-width: 900px) {
