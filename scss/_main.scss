@@ -125,10 +125,10 @@
 
     .nosotros {
       width: 100%;
-      height: 60rem;
+      height: 50rem;
       display: flex;
       justify-content: space-between;
-      padding-top: 8rem;
+      padding-top: 2rem;
 
       .contenidoNosotros {
         padding: 5rem;
@@ -139,12 +139,16 @@
           font-size: 3rem;
           font-weight: bold;
           padding-bottom: 2rem;
+          border-bottom: black 1px solid;
+        }
+
+        p {
+          text-align: center;
         }
       }
 
      .carouselNosotros {
         width: 130rem;
-        object-fit: cover;
       }
     }
   }

@@ -2,31 +2,15 @@
 
 @media (min-width: 480px) and (max-width: 900px) {
 
-  /* NOSOTROS */
+  /* INDEX */
 
-  .fondoNosotros {
-    height: 120vh;
-    background-image: url(../img/nosotros4.jpg);
-  
-    h1 {
-      padding-top: 15vh;
-     }
-   }
-  
-   .contenedorDescripcion {
-    flex-wrap: wrap;
-    
-    .pasteleria {
-      width: 90%;
-      height: 30rem;
+  .fondoMain {
+    height: 100%;
+
+    .carousel {
+      display: none;
     }
-  
-    .especialidad {
-      width: 90%;
-      height: 30rem;
-      margin-top: 5rem;
-    }
-   }
+  }
 }
 
 /********* VERSIÓN CELULAR **********/
@@ -43,29 +27,13 @@
     margin-top: 5rem;
   }
 
-  /* NOSOTROS */
+  /* INDEX */
 
- .fondoNosotros {
-  height: 150vh;
-  background-image: url(../img/nosotros4.jpg);
+  .fondoMain {
+    height: 100%;
 
-  h1 {
-    padding-top: 15vh;
-   }
- }
-
- .contenedorDescripcion {
-  flex-wrap: wrap;
-  
-  .pasteleria {
-    width: 90%;
-    height: 40rem;
-  }
-
-  .especialidad {
-    width: 90%;
-    height: 40rem;
-    margin-top: 5rem;
-  }
- }
+    .carousel {
+      display: none;
+    }
+  }  
 }

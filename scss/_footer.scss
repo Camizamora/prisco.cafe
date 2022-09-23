@@ -27,16 +27,18 @@
   }
   
   .horarios {
+    margin-left: 2rem;
     grid-area: horarios;
   }
 
   .email {
+    margin-left: 2rem;
     grid-area: email;
   }
   
   .instagram {
     opacity: 80%;
-    margin-right: 8rem;
+    margin-right: 3rem;
     grid-area: instagram;
   
     &:hover {

@@ -147,10 +147,10 @@ body {
     background-color: #f0e8e1; }
     .fondoMain .contenedorSobreNosotros .nosotros {
       width: 100%;
-      height: 60rem;
+      height: 50rem;
       display: flex;
       justify-content: space-between;
-      padding-top: 8rem; }
+      padding-top: 2rem; }
       .fondoMain .contenedorSobreNosotros .nosotros .contenidoNosotros {
         padding: 5rem; }
         .fondoMain .contenedorSobreNosotros .nosotros .contenidoNosotros h2 {
@@ -158,10 +158,12 @@ body {
           text-align: center;
           font-size: 3rem;
           font-weight: bold;
-          padding-bottom: 2rem; }
+          padding-bottom: 2rem;
+          border-bottom: black 1px solid; }
+        .fondoMain .contenedorSobreNosotros .nosotros .contenidoNosotros p {
+          text-align: center; }
       .fondoMain .contenedorSobreNosotros .nosotros .carouselNosotros {
-        width: 130rem;
-        object-fit: cover; }
+        width: 130rem; }
 
 /********* TIENDA **********/
 .contenedorCards {
@@ -217,14 +219,16 @@ body {
   grid-area: direccion; }
 
 .horarios {
+  margin-left: 2rem;
   grid-area: horarios; }
 
 .email {
+  margin-left: 2rem;
   grid-area: email; }
 
 .instagram {
   opacity: 80%;
-  margin-right: 8rem;
+  margin-right: 3rem;
   grid-area: instagram; }
   .instagram:hover {
     opacity: 1; }
@@ -269,21 +273,11 @@ body {
 
 /********* VERSIÓN TABLET **********/
 @media (min-width: 480px) and (max-width: 900px) {
-  /* NOSOTROS */
-  .fondoNosotros {
-    height: 120vh;
-    background-image: url(../img/nosotros4.jpg); }
-    .fondoNosotros h1 {
-      padding-top: 15vh; }
-  .contenedorDescripcion {
-    flex-wrap: wrap; }
-    .contenedorDescripcion .pasteleria {
-      width: 90%;
-      height: 30rem; }
-    .contenedorDescripcion .especialidad {
-      width: 90%;
-      height: 30rem;
-      margin-top: 5rem; } }
+  /* INDEX */
+  .fondoMain {
+    height: 100%; }
+    .fondoMain .carousel {
+      display: none; } }
 
 /********* VERSIÓN CELULAR **********/
 @media (max-width: 480px) {
@@ -292,21 +286,11 @@ body {
     width: 100%; }
   .tituloContacto {
     margin-top: 5rem; }
-  /* NOSOTROS */
-  .fondoNosotros {
-    height: 150vh;
-    background-image: url(../img/nosotros4.jpg); }
-    .fondoNosotros h1 {
-      padding-top: 15vh; }
-  .contenedorDescripcion {
-    flex-wrap: wrap; }
-    .contenedorDescripcion .pasteleria {
-      width: 90%;
-      height: 40rem; }
-    .contenedorDescripcion .especialidad {
-      width: 90%;
-      height: 40rem;
-      margin-top: 5rem; } }
+  /* INDEX */
+  .fondoMain {
+    height: 100%; }
+    .fondoMain .carousel {
+      display: none; } }
 
 html {
   font-size: 62.5%; }
