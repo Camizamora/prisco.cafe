@@ -1,21 +1,55 @@
 /********* MENU **********/
 
 .fondoMenu {
+<<<<<<< HEAD
   margin-top: 9rem;
 
+=======
+>>>>>>> este
   .imgCarousel {
-    height: 85vh;
+    height: 100vh;
     object-fit: cover;
   }
 
   .menu {
-    text-align: center;
-    font-size: 5.5rem;
-    font-weight: bold;
     margin-bottom: 20rem;
 
-    &:hover {
-      color: #175a66;
+    .contenedorTexto {
+      width: 30rem;
+      height: 5rem;
+      line-height: 5rem;
+      font-size: 5rem;
+      font-weight: bold;
+      overflow: hidden;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+
+      ul {
+        list-style-type: none;
+        animation: cambiar 6s infinite;
+        text-transform: uppercase;
+
+        &:hover {
+          color: #175a66;
+        }
+
+        @keyframes cambiar {
+
+          0% {margin-top: 0;}
+          20% {margin-top: 0;}
+          25% {margin-top: -5rem;}
+          50% {margin-top: -5rem;}
+          55% {margin-top: -10rem;}
+          80% {margin-top: -10rem;}
+          85% {margin-top: 0;}
+          100% {margin-top: 0;}
+        }
+      }
     }
   }
 }
@@ -31,13 +65,10 @@
   width: 50rem;
   padding: 1rem 2rem;
 
-  h1 {
-    padding-top: 13rem;
-    margin-bottom: 5rem;
-    font-size: 3rem;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
+  .subtituloContacto {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
   }
 
   .campo {
@@ -73,6 +104,7 @@
 
 /********* UBICACION **********/
 
+<<<<<<< HEAD
 .fondoUbicacion {
   h1 {
     padding-top: 22vh;
@@ -123,13 +155,118 @@
     p {
       padding-top: 1rem;
     }
+=======
+.contenedorMapa {
+  display: flex;
+  justify-content: center;
+  
+  .mapa {
+   width: 90%;
+   margin-top: 5rem;
+>>>>>>> este
   }
 }
 
 /********* MAIN INDEX **********/
 
+<<<<<<< HEAD
 .imgMain {
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
+=======
+.fondoMain {
+  height: 100%;
+
+  .imgMain {
+    width: 100%;
+    height: 90rem;
+    object-fit: cover;
+  }
+
+  .contenedorSobreNosotros {
+    background-color: #f0e8e1;
+
+    .nosotros {
+      width: 100%;
+      height: 50rem;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 2rem;
+
+      .contenidoNosotros {
+        padding: 5rem;
+
+        h2 {
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 3rem;
+          font-weight: bold;
+          padding-bottom: 2rem;
+          border-bottom: black 1px solid;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+
+     .carouselNosotros {
+        width: 130rem;
+      }
+    }
+  }
+}
+
+/********* TIENDA **********/
+
+.contenedorCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .card {
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+
+    .imagenCard {
+      transition: all 300ms;
+      opacity: 80%;
+  
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .tituloCard {
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+    }
+  
+    .subtituloCard {
+      font-weight: bold;
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .card-text {
+      font-size: 1.5rem;
+    }
+
+    .botonCarrito {
+      background-color: black;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border: none;
+
+      &:hover {
+        background-color: #4c4c4b;
+        color:black;
+      }
+    }
+  }
+}
+>>>>>>> este

@@ -16,17 +16,17 @@
       crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+    <!-- FONT AWSOME -->
+    <script src="https://kit.fontawesome.com/76d2aacad3.js" crossorigin="anonymous"></script>
   </head>
   <body class="menuPadre">
 
     <header class="headerMenu">
       <nav class="navbar navbar-expand-lg" id="navBar">
         <div class="container-fluid">
-          <figure>
-            <a href="../index.html"
-              ><img src="../img/logoPrisco-sinFondo100.png" class="logo" alt="logo"
-            /></a>
-          </figure>
+          <a class="contenedorLogo" href="../index.html"
+            ><img src="../img/logoSinFondo.png" class="logo" alt="logo"
+          /></a>
           <button
             class="navbar-toggler botonHamburguesa"
             type="button"
@@ -43,10 +43,10 @@
                 <a class="nav-link" href="../paginas/contacto.html">CONTACTO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="disabled">MENÚ</a>
+                <a class="nav-link disabled" id="disabled" href="disabled">MENÚ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../paginas/nosotros.html">NOSOTROS</a>
+                <a class="nav-link" href="../paginas/tienda.html">TIENDA</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../paginas/ubicacion.html">UBICACIÓN</a >
@@ -65,27 +65,39 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../img/avocado2.jpeg" class="d-block w-100 imgCarousel" alt="avocadoToast">
+          <img src="../img/mixb.jpeg" class="d-block w-100 imgCarousel" alt="ciabattaPollo">
           <div class="carousel-caption d-md-block menu">
-            <a href="https://borders.bistrosoft.com/menu?commerceId=11111415&menuUUID=a0fdb1ab-7922-49a1-afe2-d1c5f3b08c0c&fbclid=IwAR3XpyhOlt34DcYzPIPtEKZAS_MXlpIjoqmp1Y4xcQO7sklCDMxhMeuyj0w"
+            <a class="contenedorTexto" href="https://borders.bistrosoft.com/menu?commerceId=11111415&menuUUID=a0fdb1ab-7922-49a1-afe2-d1c5f3b08c0c&fbclid=IwAR3XpyhOlt34DcYzPIPtEKZAS_MXlpIjoqmp1Y4xcQO7sklCDMxhMeuyj0w"
             target="_blank"
-            >vení</a>
+            ><ul>
+              <li>vení</li>
+              <li>probá</li>
+              <li>tentate</li>
+            </ul></a>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../img/cafe.jpeg" class="d-block w-100 imgCarousel" alt="cafe">
+          <img src="../img/poche2.jpeg" class="d-block w-100 imgCarousel" alt="avocadoPoche">
           <div class="carousel-caption d-md-block menu">
-            <a href="https://borders.bistrosoft.com/menu?commerceId=11111415&menuUUID=a0fdb1ab-7922-49a1-afe2-d1c5f3b08c0c&fbclid=IwAR3XpyhOlt34DcYzPIPtEKZAS_MXlpIjoqmp1Y4xcQO7sklCDMxhMeuyj0w"
+            <a class="contenedorTexto" href="https://borders.bistrosoft.com/menu?commerceId=11111415&menuUUID=a0fdb1ab-7922-49a1-afe2-d1c5f3b08c0c&fbclid=IwAR3XpyhOlt34DcYzPIPtEKZAS_MXlpIjoqmp1Y4xcQO7sklCDMxhMeuyj0w"
             target="_blank"
-            >probá</a>
+            ><ul>
+              <li>vení</li>
+              <li>probá</li>
+              <li>tentate</li>
+            </ul></a>
           </div>
         </div>
         <div class="carousel-item">
           <img src="../img/macaron2.jpeg" class="d-block w-100 imgCarousel" alt="macaron">
           <div class="carousel-caption d-md-block menu">
-          <a href="https://borders.bistrosoft.com/menu?commerceId=11111415&menuUUID=a0fdb1ab-7922-49a1-afe2-d1c5f3b08c0c&fbclid=IwAR3XpyhOlt34DcYz    PIPtEKZAS_MXlpIjoqmp1Y4xcQO7sklCDMxhMeuyj0w"
+          <a class="contenedorTexto" href="https://borders.bistrosoft.com/menu?commerceId=11111415&menuUUID=a0fdb1ab-7922-49a1-afe2-d1c5f3b08c0c&fbclid=IwAR3XpyhOlt34DcYz    PIPtEKZAS_MXlpIjoqmp1Y4xcQO7sklCDMxhMeuyj0w"
           target="_blank"
-          >tentate</a>
+          ><ul>
+            <li>vení</li>
+            <li>probá</li>
+            <li>tentate</li>
+          </ul></a>
           </div>
         </div>
       </div>
@@ -101,14 +113,18 @@
 
     <footer class="footerContent">
       <div class="direccion">
-        <h2>dirección</h2>
+        <h3> <i class="fa-solid fa-location-dot"></i> dirección</h3>
         <p>Monseñor Marcón 888, Villa Luzuriaga</p>
       </div>
-      <div class="horarios">
-        <h2>horarios</h2>
-        <p>Miércoles a Domingos de 9:30 a 13 hs y de 16:30 a 20:30 hs</p>
+      <div class="horarios footer">
+        <h3> <i class="fa-solid fa-clock"></i> horarios</h3>
+        <p>Miércoles a Domingos de 9 a 20:30 hs</p>
       </div>
-      <div>
+      <div class="email footer">
+        <h3><i class="fa-solid fa-envelope"></i> e-mail</h3>
+        <p>prisco.cafe@gmail.com</p>
+      </div>
+      <div class="footer">
         <a
           href="https://www.instagram.com/prisco.cafe/"
           target="_blank"
