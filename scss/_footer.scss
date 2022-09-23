@@ -1,15 +1,4 @@
 .footerContent {
-<<<<<<< HEAD
-  display: flex;
-  width: 100%;
-  height: 8rem;
-  background-color: #f0e8e1;
-  justify-content: space-between;
-
-  h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-=======
     display: flex;
     width: 100%;
     height: 12rem;
@@ -30,15 +19,6 @@
     div {
       margin-top: 2rem;
     }
->>>>>>> este
-  }
-
-  p {
-    font-size: 2rem;
-  }
-
-  div {
-    margin-top: 1rem;
   }
 
   .direccion {
@@ -51,14 +31,6 @@
     grid-area: horarios;
   }
 
-<<<<<<< HEAD
-=======
-  .email {
-    margin-left: 2rem;
-    grid-area: email;
-  }
-  
->>>>>>> este
   .instagram {
     opacity: 80%;
     margin-right: 3rem;
@@ -72,29 +44,15 @@
 
 /********* VERSIÓN TABLET **********/
 
-<<<<<<< HEAD
-@media (min-width: 480px) and (max-width: 760px) {
-=======
 @media (min-width: 480px) and (max-width: 900px) {
 
->>>>>>> este
   .footerContent {
     height: 50rem;
     display: grid;
-<<<<<<< HEAD
-    grid-template-areas: "direccion" "horarios" "instagram";
-
-    .horarios {
-      padding-left: 3rem;
-    }
-    .instagram {
-      padding-left: 3rem;
-=======
     grid-template-areas: "direccion" "horarios" "email" "instagram";
   
   .footer {
     padding-left: 3rem;
->>>>>>> este
     }
   }
 }
@@ -107,14 +65,8 @@
     display: grid;
     grid-template-areas: "direccion" "horarios" "email" "instagram";
 
-<<<<<<< HEAD
-    .horarios,
-    .instagram {
-      padding-left: 3rem;
-=======
   .footer {
     padding-left: 3rem;
->>>>>>> este
     }
   }
 }
