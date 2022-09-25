@@ -1,8 +1,7 @@
 /* MAP GET */
 
-$estilo: (size: 2rem, shadow: 1px 1px black);
+$estilo: (size: 2rem);
 
 .descripcionNosotros {
     font-size: map-get($estilo , size);
-    // text-shadow: map-get($estilo , shadow);
 }

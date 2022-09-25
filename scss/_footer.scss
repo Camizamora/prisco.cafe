@@ -14,6 +14,10 @@
   
     p {
       font-size: 2rem;
+
+      a {
+        color: #f0e8e1;
+      }
     }
   
     div {
@@ -21,24 +25,23 @@
     }
   }
 
-  .direccion {
-    margin-left: 3rem;
-    grid-area: direccion;
-  }
+.direccion {
+  margin-left: 3rem;
+  grid-area: direccion;
+}
 
-  .horarios {
-    margin-left: 2rem;
-    grid-area: horarios;
-  }
+.horarios {
+  margin-left: 2rem;
+  grid-area: horarios;
+}
 
-  .instagram {
-    opacity: 80%;
-    margin-right: 3rem;
-    grid-area: instagram;
+.instagram {
+  opacity: 80%;
+  margin-right: 3rem;
+  grid-area: instagram;
 
-    &:hover {
-      opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -51,8 +54,12 @@
     display: grid;
     grid-template-areas: "direccion" "horarios" "email" "instagram";
   
-  .footer {
-    padding-left: 3rem;
+    .email {
+      padding-left: 3rem;
+      }
+
+    .instagram {
+      padding-left: 3rem;
     }
   }
 }
@@ -65,8 +72,12 @@
     display: grid;
     grid-template-areas: "direccion" "horarios" "email" "instagram";
 
-  .footer {
-    padding-left: 3rem;
+    .email {
+      padding-left: 3rem;
+      }
+
+    .instagram {
+      padding-left: 3rem;
     }
   }
 }
