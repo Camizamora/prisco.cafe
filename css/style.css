@@ -47,6 +47,78 @@ body {
   #navBar {
     height: 9.5rem; } }
 
+/********* MAIN INDEX **********/
+.fondoMain {
+  height: 100%; }
+  .fondoMain .imgMain {
+    width: 100%;
+    height: 90rem;
+    object-fit: cover; }
+  .fondoMain .contenedorSobreNosotros {
+    background-color: #f0e8e1;
+    display: flex;
+    flex-direction: column; }
+    .fondoMain .contenedorSobreNosotros .nosotros {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      display: flex;
+      flex-direction: row; }
+      .fondoMain .contenedorSobreNosotros .nosotros .carouselNosotros {
+        width: 100rem;
+        display: flex;
+        align-items: center; }
+      .fondoMain .contenedorSobreNosotros .nosotros .contenidoNosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 7rem; }
+        .fondoMain .contenedorSobreNosotros .nosotros .contenidoNosotros .tituloNosotros {
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 2.5rem;
+          font-weight: bold; }
+        .fondoMain .contenedorSobreNosotros .nosotros .contenidoNosotros .descripcionNosotros {
+          border-top: black 1px solid;
+          text-align: center;
+          font-size: 2rem; }
+
+/********* CONTACTO **********/
+.contenedorContacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 50rem;
+  padding: 1rem 2rem; }
+  .contenedorContacto .subtituloContacto {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 2rem; }
+  .contenedorContacto .campo {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+  .contenedorContacto textarea {
+    min-height: 10rem;
+    max-height: 20rem; }
+  .contenedorContacto .botonEnviar {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    border: none; }
+    .contenedorContacto .botonEnviar:hover {
+      cursor: pointer;
+      background-color: #4c4c4b;
+      transform: scale(0.98, 0.98); }
+
 /********* MENU **********/
 .fondoMenu .imgCarousel {
   height: 100vh;
@@ -92,79 +164,6 @@ body {
   100% {
     margin-top: 0; } }
 
-/********* CONTACTO **********/
-.contenedorContacto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
-  width: 50rem;
-  padding: 1rem 2rem; }
-  .contenedorContacto .subtituloContacto {
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    font-size: 2rem; }
-  .contenedorContacto .campo {
-    width: 100%;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    font-size: 1.5rem;
-    text-transform: uppercase; }
-  .contenedorContacto textarea {
-    min-height: 10rem;
-    max-height: 20rem; }
-  .contenedorContacto .botonEnviar {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    width: 50%;
-    padding: 1rem;
-    font-size: 1.5rem;
-    transition: all 0.2s;
-    text-transform: uppercase;
-    border: none; }
-    .contenedorContacto .botonEnviar:hover {
-      cursor: pointer;
-      background-color: #4c4c4b;
-      transform: scale(0.98, 0.98); }
-
-/********* UBICACION **********/
-.contenedorMapa {
-  display: flex;
-  justify-content: center; }
-  .contenedorMapa .mapa {
-    width: 90%;
-    margin-top: 5rem; }
-
-/********* MAIN INDEX **********/
-.fondoMain {
-  height: 100%; }
-  .fondoMain .imgMain {
-    width: 100%;
-    height: 90rem;
-    object-fit: cover; }
-  .fondoMain .contenedorSobreNosotros {
-    background-color: #f0e8e1; }
-    .fondoMain .contenedorSobreNosotros .nosotros {
-      width: 100%;
-      height: 50rem;
-      display: flex;
-      justify-content: space-between;
-      padding-top: 2rem; }
-      .fondoMain .contenedorSobreNosotros .nosotros .contenidoNosotros {
-        padding: 5rem; }
-        .fondoMain .contenedorSobreNosotros .nosotros .contenidoNosotros h2 {
-          text-transform: uppercase;
-          text-align: center;
-          font-size: 3rem;
-          font-weight: bold;
-          padding-bottom: 2rem;
-          border-bottom: black 1px solid; }
-        .fondoMain .contenedorSobreNosotros .nosotros .contenidoNosotros p {
-          text-align: center; }
-      .fondoMain .contenedorSobreNosotros .nosotros .carouselNosotros {
-        width: 130rem; }
-
 /********* TIENDA **********/
 .contenedorCards {
   display: flex;
@@ -197,60 +196,38 @@ body {
       .contenedorCards .card .botonCarrito:hover {
         transform: scale(0.98, 0.98); }
 
-.footerContent {
+/********* UBICACION **********/
+.contenedorMapa {
   display: flex;
+  justify-content: center; }
+  .contenedorMapa .mapa {
+    width: 90%;
+    margin-top: 5rem; }
+
+.footerContent {
   width: 100%;
-  height: 12rem;
+  height: 25rem;
   background-color: #175a66;
-  justify-content: space-between;
-  color: #f0e8e1; }
-  .footerContent h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase; }
-  .footerContent p {
-    font-size: 2rem; }
-    .footerContent p a {
-      color: #f0e8e1; }
-  .footerContent div {
-    margin-top: 2rem; }
-
-.direccion {
-  margin-left: 3rem;
-  grid-area: direccion; }
-
-.horarios {
-  margin-left: 2rem;
-  grid-area: horarios; }
-
-.instagram {
-  opacity: 80%;
-  margin-right: 3rem;
-  grid-area: instagram; }
-  .instagram:hover {
-    opacity: 1; }
-
-/********* VERSIÓN TABLET **********/
-@media (min-width: 480px) and (max-width: 900px) {
-  .footerContent {
-    height: 50rem;
-    display: grid;
-    grid-template-areas: "direccion" "horarios" "email" "instagram"; }
-    .footerContent .email {
-      padding-left: 3rem; }
-    .footerContent .instagram {
-      padding-left: 3rem; } }
-
-/********* VERSIÓN CELULAR **********/
-@media (max-width: 480px) {
-  .footerContent {
-    height: 40rem;
-    display: grid;
-    grid-template-areas: "direccion" "horarios" "email" "instagram"; }
-    .footerContent .email {
-      padding-left: 3rem; }
-    .footerContent .instagram {
-      padding-left: 3rem; } }
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem; }
+  .footerContent .footerItem {
+    padding-bottom: 1.5rem; }
+    .footerContent .footerItem .icono {
+      padding-right: 1rem; }
+    .footerContent .footerItem .email {
+      color: black; }
+    .footerContent .footerItem .redes {
+      opacity: 80%;
+      transition: all 0.1s; }
+      .footerContent .footerItem .redes:hover {
+        opacity: 1;
+        transform: scale(1.2, 1.2); }
+  .footerContent .derechos {
+    padding-top: 2.5rem; }
 
 .fondoUbicacion, .fondoContacto, .fondoTienda {
   width: 100%;
@@ -268,30 +245,42 @@ body {
   text-transform: uppercase;
   margin-bottom: 2rem; }
 
-/* MAP GET */
-.descripcionNosotros {
-  font-size: 2rem; }
-
 /********* VERSIÓN TABLET **********/
 @media (min-width: 480px) and (max-width: 900px) {
   /* INDEX */
-  .fondoMain {
-    height: 100%; }
-    .fondoMain .carousel {
-      display: none; } }
+  #pasteleria {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center; }
+  #especialidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .carouselNosotros {
+    width: 30rem !important; } }
 
 /********* VERSIÓN CELULAR **********/
 @media (max-width: 480px) {
+  /* INDEX */
+  #pasteleria {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center; }
+  #especialidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .carouselNosotros {
+    width: 30rem !important; }
   /* CONTACTO */
   .contenedorContacto {
     width: 100%; }
   .tituloContacto {
     margin-top: 5rem; }
-  /* INDEX */
-  .fondoMain {
-    height: 100%; }
-    .fondoMain .carousel {
-      display: none; }
   /* TIENDA */
   .contenedorCards {
     padding-right: 1.5rem; } }

@@ -1,83 +1,37 @@
 .footerContent {
-    display: flex;
-    width: 100%;
-    height: 12rem;
-    background-color: #175a66;
-    justify-content: space-between;
-    color: #f0e8e1;
-  
-    h3 {
-      font-size: 2rem;
-      font-weight: bold;
-      text-transform: uppercase;
+  width: 100%;
+  height: 25rem;
+  background-color: #175a66;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+
+  .footerItem {
+    padding-bottom: 1.5rem;
+
+    .icono {
+      padding-right: 1rem;
     }
-  
-    p {
-      font-size: 2rem;
-
-      a {
-        color: #f0e8e1;
-      }
-    }
-  
-    div {
-      margin-top: 2rem;
-    }
-  }
-
-.direccion {
-  margin-left: 3rem;
-  grid-area: direccion;
-}
-
-.horarios {
-  margin-left: 2rem;
-  grid-area: horarios;
-}
-
-.instagram {
-  opacity: 80%;
-  margin-right: 3rem;
-  grid-area: instagram;
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
-/********* VERSIÓN TABLET **********/
-
-@media (min-width: 480px) and (max-width: 900px) {
-
-  .footerContent {
-    height: 50rem;
-    display: grid;
-    grid-template-areas: "direccion" "horarios" "email" "instagram";
-  
-    .email {
-      padding-left: 3rem;
-      }
-
-    .instagram {
-      padding-left: 3rem;
-    }
-  }
-}
-
-/********* VERSIÓN CELULAR **********/
-
-@media (max-width: 480px) {
-  .footerContent {
-    height: 40rem;
-    display: grid;
-    grid-template-areas: "direccion" "horarios" "email" "instagram";
 
     .email {
-      padding-left: 3rem;
-      }
-
-    .instagram {
-      padding-left: 3rem;
+      color: black;
     }
+
+    .redes {
+      opacity: 80%;
+      transition: all 0.1s;
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+      }
+    }
+  }
+
+  .derechos {
+    padding-top: 2.5rem;
   }
 }
